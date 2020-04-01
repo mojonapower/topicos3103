@@ -1,0 +1,33 @@
+<html>
+	<head>
+	<title>DEMO Phonegap/Cordova</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8">
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/funciones.js"></script>	
+		<script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+	</head>
+<body>	
+<h1> Calculadora Basica en T2 desde app con css 3 Responsive:</h1>
+Ingrese nro1:<input type="text" id="nro1" onkeypress="return soloNumeros(event)">
+Ingrese nro2:<input type="text" id="nro2" onkeypress="return soloNumeros(event)">
+Ingrese nro3:<input type="text" id="nro3" onkeypress="return soloNumeros(event)">
+
+<select id="operacion">
+	<option value="0">Elija Operación</option>
+	<option value="1">Suma</option>
+	<option value="2">Resta</option>
+	<option value="3">Multiplicación</option>
+	<option value="4">División</option>
+</select>
+<input type="button" value="Calcular" onclick="operacion();">
+<div id="divCargando" style="display: none;">
+	<br>
+	<label id="labelCargando"></label><br><br>
+</div>
+<div id="divResultado" style="display: none;">
+	<br>
+	<label id="labelResultado"></label><br><br>
+	<input type="button" value="Reiniciar" onclick="reiniciar();">
+</div>
+</body>
+</html>
